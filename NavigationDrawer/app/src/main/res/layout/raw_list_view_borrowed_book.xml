@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/list_view_background">
+
+    <ImageView
+        android:layout_marginTop="3dp"
+        android:layout_width="72dp"
+        android:layout_height="96dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/book"/>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:layout_width="192dp"
+        android:layout_height="103dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Fahrenheit 451"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:id="@+id/title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="by Ray Bradbury"
+            android:textSize="15dp"
+            android:id="@+id/author" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrowing time left: 3 days"
+            android:textStyle="bold"
+            android:id="@+id/borrowDate" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="103dp">
+
+        <Button
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return"
+            android:textColor="#790807"
+            android:id="@+id/buttonReturn"
+            android:background="@drawable/my_button_borrow" />
+
+        <Button
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extend"
+            android:textColor="#790807"
+            android:id="@+id/buttonExtend"
+            android:background="@drawable/my_button_borrow"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

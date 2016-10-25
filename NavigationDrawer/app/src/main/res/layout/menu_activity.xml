@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cretucalinn.navigationdrawer.MenuActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="News Feed"
+        android:textColor="#ffffff"
+        android:background="@drawable/my_button_extend"
+        android:id="@+id/newsfeedButton"
+        android:layout_above="@+id/myBorrowedBooksButton"
+        android:layout_marginBottom="64dp"
+        android:layout_alignLeft="@+id/myBorrowedBooksButton"
+        android:layout_alignStart="@+id/myBorrowedBooksButton"
+        android:layout_alignRight="@+id/myBorrowedBooksButton"
+        android:layout_alignEnd="@+id/myBorrowedBooksButton" />
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Preferences"
+        android:textColor="#ffffff"
+        android:background="@drawable/my_button_extend"
+        android:id="@+id/preferencesButton"
+        android:layout_above="@+id/newsfeedButton"
+        android:layout_marginBottom="54dp"
+        android:layout_alignLeft="@+id/newsfeedButton"
+        android:layout_alignStart="@+id/newsfeedButton"
+        android:layout_alignRight="@+id/newsfeedButton"
+        android:layout_alignEnd="@+id/newsfeedButton">
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrowed Books"
+        android:textColor="#ffffff"
+        android:background="@drawable/my_button_extend"
+        android:id="@+id/myBorrowedBooksButton"
+        android:layout_marginBottom="95dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
